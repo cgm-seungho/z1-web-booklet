@@ -199,8 +199,6 @@ module.exports = {
                         importLoaders: 1,
                         minimize: true,
                         sourceMap: shouldUseSourceMap,
-                        modules: true,
-                        localIdentName: '[path][name]__[local]--[hash:base64:5]'
                       },
                     },
                     {
@@ -235,21 +233,16 @@ module.exports = {
             loader: ExtractTextPlugin.extract(
               Object.assign(
                 {
-                  fallback: {
-                    loader: require.resolve('style-loader'),
-                    options: {
-                      hmr: false,
-                    },
-                  },
+                  fallback: require.resolve('style-loader'),
                   use: [
                     {
                       loader: require.resolve('css-loader'),
                       options: {
                         importLoaders: 1,
                         minimize: true,
-                        sourceMap: shouldUseSourceMap,
+                        sourceMap: true,
                         modules: true,
-                        localIdentName: '[path][name]__[local]--[hash:base64:5]'
+                        localIdentName: '[name]__[local]__[hash:base64:5]'
                       },
                     },
                     {
@@ -272,6 +265,9 @@ module.exports = {
                         ],
                       },
                     },
+                    {
+                      loader: require.resolve('sass-loader'),
+                    }
                   ],
                 },
                 extractTextPluginOptions
@@ -284,7 +280,7 @@ module.exports = {
           // This loader doesn't use a "test" so it will catch all modules
           // that fall through the other loaders.
           {
-            loader: require.resolve('sass-loader'),
+            loader: require.resolve('file-loader'),
             // Exclude `js` files to keep "css" loader working as it injects
             // it's runtime that would otherwise processed through "file" loader.
             // Also exclude `html` and `json` extensions so they get processed

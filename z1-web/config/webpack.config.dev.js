@@ -212,7 +212,7 @@ module.exports = {
                 options: {
                   importLoaders: 1,
                   modules: true,
-                  localIdentName: '[path][name]__[local]--[hash:base64:5]'
+                  localIdentName: '[name]__[local]__[hash:base64:5]'
                 },
               },
               {
@@ -235,6 +235,9 @@ module.exports = {
                   ],
                 },
               },
+              {
+                loader: require.resolve('sass-loader'),
+              }
             ],
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
@@ -248,7 +251,7 @@ module.exports = {
             // Also exclude `html` and `json` extensions so they get processed
             // by webpacks internal loaders.
             exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/],
-            loader: require.resolve('sass-loader'),
+            loader: require.resolve('file-loader'),
             options: {
               name: 'static/media/[name].[hash:8].[ext]',
             },
