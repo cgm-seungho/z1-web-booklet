@@ -1,14 +1,14 @@
 import * as React from "react";
 import * as styles from "./MainPage.scss";
-import { Button } from 'reactstrap';
+import ButtonAppbar from "../../materialui/ButtonAppbar";
 
 class MainPage extends React.Component {
-    public render() {
-        return (
-            <div className={styles.MainPage}>
-                MainPage
-                <Button color="primary">이건 버튼입니당</Button>{' '}
-            </div>
+  public render() {
+    return (
+      <div className={styles.MainPage}>
+        <ButtonAppbar/>
+        MainPage
+      </div>
             
         );
     }

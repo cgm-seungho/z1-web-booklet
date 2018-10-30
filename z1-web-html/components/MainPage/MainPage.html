@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="MainPage.css">
+  <!-- <script src="main.js"></script> -->
+
+  <!-- Semantic UI -->
+  <link rel="stylesheet" type="text/css" href="../../semantic/semantic.css">
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="../../semantic/semantic.js"></script>
+</head>
+
+<body>
+  <div class="MainPage">
+
+    <div class="Header">
+      <div class="header_container">
+        <!-- Home 버튼 -->
+        <a href="./MainPage.html"><img class="homebutton" src="../../assets/home.png"></a>
+        
+        <div class="ui left vertical menu sidebar">
+          <a class="item">
+            상단
+          </a>
+          <a class="item">
+            오픈소스의 역사
+          </a>
+          <a class="item">
+            역사 1
+          </a>
+          <a class="item">
+            역사 2
+          </a>
+          <a class="item">
+            역사 3
+          </a>
+          <a class="item">
+            역사 4
+          </a>
+          <a class="item">
+            오픈소스의 소개
+          </a>
+          <a class="item">
+            소개 1
+          </a>
+          <a class="item">
+            소개 2
+          </a>
+          <a class="item">
+            소개 3
+          </a>
+          <a class="item">
+            소개 4
+          </a>
+          <a class="item">
+            소개 5
+          </a>
+        </div>
+
+        <div class="pusher">
+          <!-- <button id="contents" class="ui blue basic icon button"> -->
+          <button id="contents" class="ui inverted button">
+            <i class= "icon bars"></i>
+            CONTENTS
+          </button>
+        </div>
+
+        <a class="gitbutton" href="https://github.com/cgm-seungho/z1-web-booklet">
+          <button class="ui black button">
+            <i class="github icon"></i>
+            Github
+          </button>
+        </a>
+
+        <a class="cowbutton" href="https://erica.codeonweb.com/circle/6c222cc0-7eb5-42e2-aac3-0a2d5777c2ca">
+          <button class="ui red button">
+              <i class="copyright icon"></i>
+              CodeOnWeb
+            </button>
+        </a>
+        
+        <script>
+          $('#contents').click(function(){
+            $('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');
+          })
+        </script>
+      </div>
+    </div>
+
+
+    <div class="main">
+      <div class="textbox">
+        <br/><br/><br/><br/>
+        OPEN SOURCE<br/><br/><br/><br/><br/><br/>
+        SOFTWARE
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="preview">
+        preview
+      </div>
+      <div class="preinfo">
+        preinfo
+      </div>
+      <div class="timeline">
+        timeline
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
