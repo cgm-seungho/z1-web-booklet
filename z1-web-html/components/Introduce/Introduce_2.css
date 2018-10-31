@@ -66,6 +66,7 @@
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  min-height: 1500px;
 }
 
 .Introduce_2 .main .main_text_container {
@@ -77,10 +78,20 @@
   font-size: 3em;
 }
 
+.Introduce_2 .main .line {
+  margin-top: 2.5em;
+  max-width: 700px;
+  border: 0.5px solid gray;
+}
+
 .Introduce_2 .main .text_container {
-  margin-top: 5em;
+  margin-top: 2.5em;
   font-size: 1.5em;
   text-align: left;
   line-height: 1.2;
+}
+
+.Introduce_2 .main .text_container img {
+  width: 700px;
 }
 /*# sourceMappingURL=Introduce_2.css.map */
