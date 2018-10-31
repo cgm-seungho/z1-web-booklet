@@ -4,7 +4,10 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OPEN SOURCE</title>
+  <link href="../../assets/fav.png" type="image/png" rel="shortcut icon"/>
   <link rel="stylesheet" type="text/css" href="MainPage.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- <script src="main.js"></script> -->
 
   <!-- Semantic UI -->
@@ -14,6 +17,11 @@
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="../../semantic/semantic.js"></script>
+
+  <!-- BootStrap -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -22,45 +30,37 @@
     <div class="Header">
       <div class="header_container">
         <!-- Home 버튼 -->
-        <a href="./MainPage.html"><img class="homebutton" src="../../assets/home.png"></a>
+        <a href="../MainPage/MainPage.html"><img class="homebutton" src="../../assets/home.png"></a>
         
         <div class="ui left vertical menu sidebar">
-          <a class="item">
-            상단
-          </a>
-          <a class="item">
-            오픈소스의 역사
-          </a>
-          <a class="item">
-            역사 1
-          </a>
-          <a class="item">
-            역사 2
-          </a>
-          <a class="item">
-            역사 3
-          </a>
-          <a class="item">
-            역사 4
-          </a>
-          <a class="item">
-            오픈소스의 소개
-          </a>
-          <a class="item">
-            소개 1
-          </a>
-          <a class="item">
-            소개 2
-          </a>
-          <a class="item">
-            소개 3
-          </a>
-          <a class="item">
-            소개 4
-          </a>
-          <a class="item">
-            소개 5
-          </a>
+
+          <div class="item">
+              <div class="header">OPEN SOURCE</div>
+          </div>
+
+          <div class="item">
+            <div class="header">오픈소스의 역사</div>
+            <div class="menu">
+              <a class="item" href="../History/History_1.html">1980년 이전의 자유 소프트웨어</a>
+              <a class="item" href="../History/History_2.html">자유 소프트웨어를 억압하는 기업들</a>
+              <a class="item" href="../History/History_3.html">자유 소프트웨어 운동의 시작</a>
+              <a class="item" href="../History/History_4.html">오픈소스</a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="header">오픈소스 소개</div>
+            <div class="menu">
+              <a class="item" href="../Introduce/Introduce_1.html">오픈소스의 철학과 정의</a>
+              <a class="item" href="../Introduce/Introduce_2.html">오픈소스 개발 동기</a>
+              <a class="item" href="../Introduce/Introduce_3.html">오픈소스와 법</a>
+              <a class="item" href="../Introduce/Introduce_4.html">오픈소스 라이선스</a>
+              <a class="item" href="../Introduce/Introduce_5.html">오픈소스 단체와 활동</a>
+            </div>
+          </div>
+
+          <img src="../../assets/fav.png" class="sideicon"/>
+
         </div>
 
         <div class="pusher">
@@ -93,27 +93,115 @@
       </div>
     </div>
 
-
     <div class="main">
       <div class="textbox">
         <br/><br/><br/><br/>
         OPEN SOURCE<br/><br/><br/><br/><br/><br/>
-        SOFTWARE
+        SOFTWARE<br/><br/><br/><br/>  
+
+        <a href="../../assets/booklet_pdf.pdf">
+          <div class="ui inverted animated fade button pdf" tabindex="0">
+            <div class="visible content">BOOKLET</div>
+              <div class="hidden content">
+                PDF
+              </div>
+          </div>
+        </a>
       </div>
     </div>
 
-    <div class="info">
-      <div class="preview">
-        preview
-      </div>
-      <div class="preinfo">
-        preinfo
-      </div>
-      <div class="timeline">
-        timeline
-      </div>
+    <div class="timelinebox">
+
+      <section id=timeline>
+
+          <h1>A Project Timeline</h1>
+          
+          <p class="leader">All cards must be the same height and width for space calculations on large screens.</p>
+
+          <div class="demo-card-wrapper">
+            <div class="demo-card demo-card--step1">
+              <div class="head">
+                <div class="number-box">
+                  <span>01</span>
+                </div>
+                <h2><span class="small">Subtitle</span> Technology</h2>
+              </div>
+              <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                <img src="http://placehold.it/1000x500" alt="Graphic">
+              </div>
+            </div>
+        
+            <div class="demo-card demo-card--step2">
+              <div class="head">
+                <div class="number-box">
+                  <span>02</span>
+                </div>
+                <h2><span class="small">Subtitle</span> Confidence</h2>
+              </div>
+              <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                <img src="http://placehold.it/1000x500" alt="Graphic">
+              </div>
+            </div>
+        
+            <div class="demo-card demo-card--step3">
+              <div class="head">
+                <div class="number-box">
+                  <span>03</span>
+                </div>
+                <h2><span class="small">Subtitle</span> Adaptation</h2>
+              </div>
+              <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                <img src="http://placehold.it/1000x500" alt="Graphic">
+              </div>
+            </div>
+        
+            <div class="demo-card demo-card--step4">
+              <div class="head">
+                <div class="number-box">
+                  <span>04</span>
+                </div>
+                <h2><span class="small">Subtitle</span> Consistency</h2>
+              </div>
+              <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                <img src="http://placehold.it/1000x500" alt="Graphic">
+              </div>
+            </div>
+        
+            <div class="demo-card demo-card--step5">
+              <div class="head">
+                <div class="number-box">
+                  <span>05</span>
+                </div>
+                <h2><span class="small">Subtitle</span> Conversion</h2>
+              </div>
+              <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                <img src="http://placehold.it/1000x500" alt="Graphic">
+              </div>
+            </div>
+            
+          </div>
+      </section>
     </div>
 
   </div>
+  <script>
+      $(function() {
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 520) {
+                $(".Header").addClass("active");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+              $(".Header").removeClass("active");
+            }
+        });
+    });
+  </script>
+  
 </body>
 </html>
+

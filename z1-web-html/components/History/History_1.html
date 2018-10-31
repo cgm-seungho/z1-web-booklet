@@ -1,0 +1,124 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OPEN SOURCE</title>
+<link href="../../assets/fav.png" type="image/png" rel="shortcut icon"/>
+<link rel="stylesheet" type="text/css" href="History_1.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- <script src="main.js"></script> -->
+
+<!-- Semantic UI -->
+<link rel="stylesheet" type="text/css" href="../../semantic/semantic.css">
+<script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+<script src="../../semantic/semantic.js"></script>
+
+<!-- BootStrap -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="History_1">
+    <div class="Header">
+        <div class="header_container">
+          <!-- Home 버튼 -->
+          <a href="../MainPage/MainPage.html"><img class="homebutton" src="../../assets/home.png"></a>
+          
+          <div class="ui left vertical menu sidebar">
+
+              <div class="item">
+                  <div class="header">OPEN SOURCE</div>
+              </div>
+    
+              <div class="item">
+                <div class="header">오픈소스의 역사</div>
+                <div class="menu">
+                  <a class="item" href="../History/History_1.html">1980년 이전의 자유 소프트웨어</a>
+                  <a class="item" href="../History/History_2.html">자유 소프트웨어를 억압하는 기업들</a>
+                  <a class="item" href="../History/History_3.html">자유 소프트웨어 운동의 시작</a>
+                  <a class="item" href="../History/History_4.html">오픈소스</a>
+                </div>
+              </div>
+    
+              <div class="item">
+                <div class="header">오픈소스 소개</div>
+                <div class="menu">
+                  <a class="item" href="../Introduce/Introduce_1.html">오픈소스의 철학과 정의</a>
+                  <a class="item" href="../Introduce/Introduce_2.html">오픈소스 개발 동기</a>
+                  <a class="item" href="../Introduce/Introduce_3.html">오픈소스와 법</a>
+                  <a class="item" href="../Introduce/Introduce_4.html">오픈소스 라이선스</a>
+                  <a class="item" href="../Introduce/Introduce_5.html">오픈소스 단체와 활동</a>
+                </div>
+              </div>
+    
+              <img src="../../assets/fav.png" class="sideicon"/>
+    
+          </div>
+  
+          <div class="pusher">
+            <!-- <button id="contents" class="ui blue basic icon button"> -->
+            <button id="contents" class="ui inverted button">
+              <i class= "icon bars"></i>
+              CONTENTS
+            </button>
+          </div>
+  
+          <a class="gitbutton" href="https://github.com/cgm-seungho/z1-web-booklet">
+            <button class="ui black button">
+              <i class="github icon"></i>
+              Github
+            </button>
+          </a>
+  
+          <a class="cowbutton" href="https://erica.codeonweb.com/circle/6c222cc0-7eb5-42e2-aac3-0a2d5777c2ca">
+            <button class="ui red button">
+                <i class="copyright icon"></i>
+                CodeOnWeb
+              </button>
+          </a>
+          
+          <script>
+            $('#contents').click(function(){
+              $('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');
+            })
+          </script>
+        </div>
+    </div>
+
+    <div class="main">
+
+      <div class="main_text_container">
+        <h1>가. 1980년대 이전의 자유 소프트웨어</h1>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="text_container">
+        <img src="../../assets/history1.png"/>
+        <br/><br/>
+        <p>
+          &nbsp;&nbsp;1960년대의 소프트웨어는 주로 공동 연구로 일하는 학자나 기업 연구원에 의해서 제작이 되었다.
+        </p>
+        <p>
+          &nbsp;&nbsp;소프트웨어는 한 분야에서 정란 원칙에 따라서 공유, 배포되었다. 이러한 단계가 오픈소스 소프트웨어의 시초라고 할 수 있다.
+        </p>
+        <p>
+          &nbsp;&nbsp;한 예시를 들자면 사용자 그룹 소프트웨어 교환을 좀 더 원활하게 할 수 있도록 SHARE라고 불리는 IBM 701과 DECUS라고 불리는 DEC이 형성되었다. 또한 1969년에는 소프트웨어 코드의 교환을 단순화 시킨 'ARPANET' 고속 컴퓨터 네트워크가 구축되었다.
+        </p>
+        
+
+      </div>
+
+
+    </div>
+    
+  </div>
+</body>
+</html>

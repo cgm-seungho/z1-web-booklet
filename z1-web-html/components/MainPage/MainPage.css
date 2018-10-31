@@ -3,6 +3,18 @@
   src: url("../../assets/ERASBD.TTF");
 }
 
+@font-face {
+  font-family: 'nanumgothic';
+  src: url("../../assets/NanumGothic.otf");
+}
+
+.sideicon {
+  margin-left: 40px;
+  margin-top: 200px;
+  width: 180px;
+  height: 180px;
+}
+
 .MainPage .Header {
   position: fixed;
   display: block;
@@ -46,8 +58,9 @@
   margin-right: 30px;
 }
 
-.MainPage .Header::after {
-  background-color: white;
+.MainPage .active {
+  background-color: #3c7ecb;
+  padding: 1rem;
 }
 
 .MainPage .main {
@@ -64,24 +77,322 @@
   display: inline-block;
   position: relative;
   width: 700px;
-  height: 300px;
+  height: 350px;
   font-family: erasitc;
   font-size: 80px;
   color: white;
   border: 5px solid white;
 }
 
-.MainPage .info {
-  width: 100%;
-  display: block;
-  text-align: center;
+.MainPage .main .pdf {
+  font-family: erasitc;
+  font-size: 20px;
 }
 
-.MainPage .info .preview {
-  display: inline-block;
+.MainPage .timelinebox {
+  /* Media Queries */
+  /* Card sizing */
+  /* Colors */
+  /* Calculations */
+  /* Placeholders */
+  /* Some Cool Stuff */
+  /* Border Box */
+  /* Fonts */
+}
+
+@media (min-width: 1000px) {
+  .MainPage .timelinebox #timeline .demo-card:nth-child(odd) .head::after, .MainPage .timelinebox #timeline .demo-card:nth-child(even) .head::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+  .MainPage .timelinebox #timeline .demo-card:nth-child(odd) .head::before, .MainPage .timelinebox #timeline .demo-card:nth-child(even) .head::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: #bdbdbd;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 2px 8px #f7f7f7;
+            box-shadow: 0px 0px 2px 8px #f7f7f7;
+  }
+}
+
+.MainPage .timelinebox .demo-card:nth-child(1) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.MainPage .timelinebox .demo-card:nth-child(2) {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.MainPage .timelinebox .demo-card:nth-child(3) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.MainPage .timelinebox .demo-card:nth-child(4) {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+.MainPage .timelinebox .demo-card:nth-child(5) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.MainPage .timelinebox .demo-card:nth-child(6) {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+}
+
+.MainPage .timelinebox * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.MainPage .timelinebox body {
+  font-family: Roboto;
+}
+
+.MainPage .timelinebox #timeline {
+  padding: 100px 0;
+  background: #f7f7f7;
+  border-top: 1px solid rgba(191, 191, 191, 0.4);
+  border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+}
+
+.MainPage .timelinebox #timeline h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.MainPage .timelinebox #timeline p.leader {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 45px;
+}
+
+.MainPage .timelinebox #timeline .demo-card-wrapper {
   position: relative;
-  width: calc(21px * 15);
-  height: calc(29.7px * 15);
-  background-color: red;
+  margin: auto;
+}
+
+@media (min-width: 1000px) {
+  .MainPage .timelinebox #timeline .demo-card-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    width: 1170px;
+    height: 1650px;
+    margin: 0 auto;
+  }
+}
+
+.MainPage .timelinebox #timeline .demo-card-wrapper::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px solid rgba(191, 191, 191, 0.4);
+}
+
+@media (min-width: 1000px) {
+  .MainPage .timelinebox #timeline .demo-card-wrapper::after {
+    border-left: 1px solid #bdbdbd;
+  }
+}
+
+.MainPage .timelinebox #timeline .demo-card {
+  position: relative;
+  display: block;
+  margin: 10px auto 80px;
+  max-width: 94%;
+  z-index: 2;
+}
+
+@media (min-width: 480px) {
+  .MainPage .timelinebox #timeline .demo-card {
+    max-width: 60%;
+    -webkit-box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+  }
+}
+
+@media (min-width: 720px) {
+  .MainPage .timelinebox #timeline .demo-card {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .MainPage .timelinebox #timeline .demo-card {
+    max-width: 450px;
+    height: 400px;
+    margin: 90px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+  .MainPage .timelinebox #timeline .demo-card:nth-child(odd) {
+    margin-right: 45px;
+  }
+  .MainPage .timelinebox #timeline .demo-card:nth-child(odd) .head::after {
+    border-left-width: 15px;
+    border-left-style: solid;
+    left: 100%;
+  }
+  .MainPage .timelinebox #timeline .demo-card:nth-child(odd) .head::before {
+    left: 491.5px;
+  }
+  .MainPage .timelinebox #timeline .demo-card:nth-child(even) {
+    margin-left: 45px;
+  }
+  .MainPage .timelinebox #timeline .demo-card:nth-child(even) .head::after {
+    border-right-width: 15px;
+    border-right-style: solid;
+    right: 100%;
+  }
+  .MainPage .timelinebox #timeline .demo-card:nth-child(even) .head::before {
+    right: 489.5px;
+  }
+  .MainPage .timelinebox #timeline .demo-card:nth-child(2) {
+    margin-top: 180px;
+  }
+}
+
+.MainPage .timelinebox #timeline .demo-card .head {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-weight: 400;
+}
+
+.MainPage .timelinebox #timeline .demo-card .head .number-box {
+  display: inline;
+  float: left;
+  margin: 15px;
+  padding: 10px;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.17);
+}
+
+.MainPage .timelinebox #timeline .demo-card .head h2 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: inherit;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-bottom: 6px;
+  line-height: 1rem;
+}
+
+@media (min-width: 480px) {
+  .MainPage .timelinebox #timeline .demo-card .head h2 {
+    font-size: 165%;
+    line-height: 1.2rem;
+  }
+}
+
+.MainPage .timelinebox #timeline .demo-card .head h2 span {
+  display: block;
+  font-size: 0.6rem;
+  margin: 0;
+}
+
+@media (min-width: 480px) {
+  .MainPage .timelinebox #timeline .demo-card .head h2 span {
+    font-size: 0.8rem;
+  }
+}
+
+.MainPage .timelinebox #timeline .demo-card .body {
+  background: #fff;
+  border: 1px solid rgba(191, 191, 191, 0.4);
+  border-top: 0;
+  padding: 15px;
+}
+
+@media (min-width: 1000px) {
+  .MainPage .timelinebox #timeline .demo-card .body {
+    height: 315px;
+  }
+}
+
+.MainPage .timelinebox #timeline .demo-card .body p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+.MainPage .timelinebox #timeline .demo-card .body img {
+  display: block;
+  width: 100%;
+}
+
+.MainPage .timelinebox #timeline .demo-card--step1 {
+  background-color: #46b8e9;
+}
+
+.MainPage .timelinebox #timeline .demo-card--step1 .head::after {
+  border-color: #46b8e9;
+}
+
+.MainPage .timelinebox #timeline .demo-card--step2 {
+  background-color: #3ee9d1;
+}
+
+.MainPage .timelinebox #timeline .demo-card--step2 .head::after {
+  border-color: #3ee9d1;
+}
+
+.MainPage .timelinebox #timeline .demo-card--step3 {
+  background-color: #ce43eb;
+}
+
+.MainPage .timelinebox #timeline .demo-card--step3 .head::after {
+  border-color: #ce43eb;
+}
+
+.MainPage .timelinebox #timeline .demo-card--step4 {
+  background-color: #4d92eb;
+}
+
+.MainPage .timelinebox #timeline .demo-card--step4 .head::after {
+  border-color: #4d92eb;
+}
+
+.MainPage .timelinebox #timeline .demo-card--step5 {
+  background-color: #46b8e9;
+}
+
+.MainPage .timelinebox #timeline .demo-card--step5 .head::after {
+  border-color: #46b8e9;
 }
 /*# sourceMappingURL=MainPage.css.map */
